@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--<head>-->
+<!--    <title>Flask Intro</title>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--</head>-->
+
+<div class="container">
+  <h1>Welcome to the SLIS Freedom Forums!</h1>
+  <br>
+  <p>Click <a href="/">here</a> to get started.</p>
+</div>
+
+{% for post in posts %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ post.username }}</a>
+          <small class="text-muted">{{ post.date_posted }}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+        <p class="article-content">{{ post.content }}</p>
+      </div>
+    </article>
+{% endfor %}
+
+
+
+{% endblock %}
