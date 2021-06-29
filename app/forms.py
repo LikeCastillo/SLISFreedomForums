@@ -35,7 +35,7 @@ class RegistrationForm(FlaskForm):
         if user:
             raise ValidationError('Email Exists Already!')
 
-
+#Login Form for Registered Users
 class LoginForm(FlaskForm):
     #For logging in
     username = StringField('Username',
@@ -68,6 +68,7 @@ class UpdateAccountForm(FlaskForm):
             if user:
                 raise ValidationError('Email Exists Already!')
 
+#Form when posting something in the Freedom Foruma
 class PostForm(FlaskForm):
     title = StringField("Title", validators=[DataRequired()])
     content = TextAreaField("Content", validators=[DataRequired(), Length(max=750)])
