@@ -68,7 +68,7 @@ class UpdateAccountForm(FlaskForm):
             if user:
                 raise ValidationError('Email Exists Already!')
 
-#Form when posting something in the Freedom Foruma
+#Form when posting something in the Freedom Forums
 class PostForm(FlaskForm):
     title = StringField("Title", validators=[DataRequired()])
     content = TextAreaField("Content", validators=[DataRequired(), Length(max=750)])
