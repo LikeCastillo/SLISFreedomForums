@@ -17,3 +17,5 @@ loginm.login_message_category = 'info'
 
 #from the app package/folder, importing the routes.py
 from app import routes
+
+#With the __init__ , we can treat the 'app' directory as a package that is to be initialized by the other files
