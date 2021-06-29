@@ -26,10 +26,9 @@ Tools used for this project
 - Flask (including WTforms that helps record user input upon registration, validators, flask_login to login, datetime)
 - SQAlchemy and SQLite(to assist us in managing SQL Databases, would not need anymore to open SQLite to directly edit the db)
 - Pillow (Python Imaging Library in handling profile pictures)
+- BCrypt to hash passwords for security
 
 
 
 
-
--
 
